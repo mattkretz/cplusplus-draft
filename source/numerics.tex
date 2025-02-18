@@ -16829,6 +16829,130 @@ namespace std::datapar {
 
   template<@\exposconcept{simd-complex}@ V> constexpr V pow(const V& x, const V& y);
 }
+
+namespace std {
+  // See \ref{simd.alg}, Algorithms
+  using datapar::min;
+  using datapar::max;
+  using datapar::minmax;
+  using datapar::clamp;
+
+  // See \ref{simd.math}, Mathematical functions
+  using datapar::acos;
+  using datapar::asin;
+  using datapar::atan;
+  using datapar::atan2;
+  using datapar::cos;
+  using datapar::sin;
+  using datapar::tan;
+  using datapar::acosh;
+  using datapar::asinh;
+  using datapar::atanh;
+  using datapar::cosh;
+  using datapar::sinh;
+  using datapar::tanh;
+  using datapar::exp;
+  using datapar::exp2;
+  using datapar::expm1;
+  using datapar::frexp;
+  using datapar::ilogb;
+  using datapar::ldexp;
+  using datapar::log;
+  using datapar::log10;
+  using datapar::log1p;
+  using datapar::log2;
+  using datapar::logb;
+  using datapar::modf;
+  using datapar::scalbn;
+  using datapar::scalbln;
+  using datapar::cbrt;
+  using datapar::abs;
+  using datapar::abs;
+  using datapar::fabs;
+  using datapar::hypot;
+  using datapar::pow;
+  using datapar::sqrt;
+  using datapar::erf;
+  using datapar::erfc;
+  using datapar::lgamma;
+  using datapar::tgamma;
+  using datapar::ceil;
+  using datapar::floor;
+  using datapar::nearbyint;
+  using datapar::rint;
+  using datapar::lrint;
+  using datapar::llrint;
+  using datapar::round;
+  using datapar::lround;
+  using datapar::llround;
+  using datapar::trunc;
+  using datapar::fmod;
+  using datapar::remainder;
+  using datapar::remquo;
+  using datapar::copysign;
+  using datapar::nextafter;
+  using datapar::fdim;
+  using datapar::fmax;
+  using datapar::fmin;
+  using datapar::fma;
+  using datapar::lerp;
+  using datapar::fpclassify;
+  using datapar::isfinite;
+  using datapar::isinf;
+  using datapar::isnan;
+  using datapar::isnormal;
+  using datapar::signbit;
+  using datapar::isgreater;
+  using datapar::isgreaterequal;
+  using datapar::isless;
+  using datapar::islessequal;
+  using datapar::islessgreater;
+  using datapar::isunordered;
+  using datapar::assoc_laguerre;
+  using datapar::assoc_legendre;
+  using datapar::beta;
+  using datapar::comp_ellint_1;
+  using datapar::comp_ellint_2;
+  using datapar::comp_ellint_3;
+  using datapar::cyl_bessel_i;
+  using datapar::cyl_bessel_j;
+  using datapar::cyl_bessel_k;
+  using datapar::cyl_neumann;
+  using datapar::ellint_1;
+  using datapar::ellint_2;
+  using datapar::ellint_3;
+  using datapar::expint;
+  using datapar::hermite;
+  using datapar::laguerre;
+  using datapar::legendre;
+  using datapar::riemann_zeta;
+  using datapar::sph_bessel;
+  using datapar::sph_legendre;
+  using datapar::sph_neumann;
+
+  // See \ref{simd.bit}, Bit manipulation
+  using datapar::byteswap;
+  using datapar::bit_ceil;
+  using datapar::bit_floor;
+  using datapar::has_single_bit;
+  using datapar::rotl;
+  using datapar::rotr;
+  using datapar::bit_width;
+  using datapar::countl_zero;
+  using datapar::countl_one;
+  using datapar::countr_zero;
+  using datapar::countr_one;
+  using datapar::popcount;
+
+  // See \ref{simd.complex.math}, simd complex math
+  using datapar::real;
+  using datapar::imag;
+  using datapar::arg;
+  using datapar::norm;
+  using datapar::conj;
+  using datapar::proj;
+  using datapar::polar;
+}
 \end{codeblock}
 
 \rSec2[simd.traits]{\tcode{simd} type traits}
