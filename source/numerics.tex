@@ -16386,7 +16386,7 @@ for
 \rSec2[simd.syn]{Header \tcode{<simd>} synopsis}
 \indexheader{simd}%
 \begin{codeblock}
-namespace std {
+namespace std::datapar {
   // \ref{simd.traits}, \tcode{simd} type traits
   template<class T, class U = typename T::value_type> struct simd_alignment;
   template<class T, class U = typename T::value_type>
@@ -16944,7 +16944,7 @@ if \tcode V is a specialization of \tcode{basic_simd} or
 \rSec3[simd.flags.overview]{Class template \tcode{simd_flags} overview}
 
 \begin{codeblock}
-namespace std {
+namespace std::datapar {
   template<class... Flags> struct simd_flags {
     // \ref{simd.flags.oper}, \tcode{simd_flags} operators
     template<class... Other>
@@ -16988,7 +16988,7 @@ template<class... Other>
 \rSec3[simd.overview]{Class template \tcode{basic_simd} overview}
 
 \begin{codeblock}
-namespace std {
+namespace std::datapar {
   template<class T, class Abi> class basic_simd {
   public:
     using value_type = T;
@@ -18884,7 +18884,7 @@ It is unspecified whether \tcode{errno}\iref{errno} is accessed.
 \rSec3[simd.mask.overview]{Class template \tcode{basic_simd_mask} overview}
 
 \begin{codeblock}
-namespace std {
+namespace std::datapar {
   template<size_t Bytes, class Abi> class basic_simd_mask {
   public:
     using value_type = bool;
